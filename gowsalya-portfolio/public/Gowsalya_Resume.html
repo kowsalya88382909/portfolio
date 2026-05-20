@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gowsalya M – Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 10.5pt;
+      color: #000;
+      background: #fff;
+      padding: 0;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 11mm 14mm 8mm 14mm;
+      background: #fff;
+    }
+
+    /* ---- HEADER ---- */
+    .header { text-align: center; margin-bottom: 6px; }
+    .header h1 { font-size: 20pt; font-weight: bold; letter-spacing: 1px; margin-bottom: 3px; }
+    .header .location { font-size: 10pt; margin-bottom: 4px; }
+    .header .contacts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      font-size: 9.5pt;
+      flex-wrap: wrap;
+    }
+    .header .contacts a { color: #000; text-decoration: none; }
+    .header .contacts span { display: flex; align-items: center; gap: 4px; }
+
+    /* ---- SECTION ---- */
+    .section { margin-top: 8px; }
+    .section-title {
+      font-size: 11pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 1.2px solid #000;
+      padding-bottom: 1px;
+      margin-bottom: 5px;
+      letter-spacing: 0.3px;
+    }
+
+    /* ---- SKILLS ---- */
+    .skills-row { margin-bottom: 3px; font-size: 10pt; line-height: 1.5; }
+    .skills-row strong { font-weight: bold; }
+
+    /* ---- EXPERIENCE ---- */
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+    .exp-header .role { font-weight: bold; font-size: 10.5pt; }
+    .exp-header .period { font-size: 10pt; }
+    .exp-sub {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 10pt;
+      margin-bottom: 3px;
+    }
+    ul.bullets {
+      padding-left: 16px;
+      margin-bottom: 4px;
+    }
+    ul.bullets li {
+      font-size: 10pt;
+      line-height: 1.55;
+      list-style-type: disc;
+    }
+
+    /* ---- PROJECTS ---- */
+    .project-title { font-weight: bold; font-size: 10.5pt; margin-top: 5px; margin-bottom: 2px; }
+
+    /* ---- EDUCATION ---- */
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .edu-header .degree { font-weight: bold; font-size: 10.5pt; }
+    .edu-header .year { font-size: 10pt; }
+    .edu-sub {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 10pt;
+      margin-bottom: 2px;
+    }
+    .cgpa { font-size: 10pt; margin-top: 1px; }
+
+    /* ---- CERTS / LANGUAGES ---- */
+    .cert-item { font-size: 10pt; line-height: 1.8; }
+    .lang-item { font-size: 10pt; line-height: 1.8; }
+
+    /* ---- PRINT ---- */
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; padding: 11mm 14mm 8mm 14mm; width: 100%; }
+      .no-print { display: none; }
+    }
+
+    /* ---- DOWNLOAD BAR (screen only) ---- */
+    .download-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #1a1a2e;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+    .download-bar span { color: #a78bfa; font-weight: 600; }
+    .download-bar .btns { display: flex; gap: 10px; }
+    .download-bar button {
+      padding: 6px 16px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .btn-print { background: #7c3aed; color: #fff; }
+    .btn-close { background: #374151; color: #fff; }
+    .page-wrapper { margin-top: 50px; }
+
+    @media print {
+      .download-bar { display: none; }
+      .page-wrapper { margin-top: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Download/Print Bar (hidden on print) -->
+  <div class="download-bar no-print">
+    <span>📄 Gowsalya M — Resume</span>
+    <div class="btns">
+      <button class="btn-print" onclick="window.print()">⬇ Download / Print PDF</button>
+      <button class="btn-close" onclick="window.close()">✕ Close</button>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+    <div class="page">
+
+      <!-- HEADER -->
+      <div class="header">
+        <h1>GOWSALYA M</h1>
+        <div class="location">Chennai, Tamil Nadu</div>
+        <div class="contacts">
+          <span>📞 +91 88382 96909</span>
+          <span>✉ <a href="mailto:gowsalyam@ptleecncet.com">gowsalyam@ptleecncet.com</a></span>
+          <span>🔗 <a href="https://linkedin.com/in/kowsalya09" target="_blank">LinkedIn</a></span>
+          <span>🐙 <a href="https://github.com/kowsalya" target="_blank">GitHub</a></span>
+        </div>
+      </div>
+
+      <!-- PROFESSIONAL SUMMARY -->
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p style="font-size:10pt; line-height:1.55;">
+          Aspiring Full Stack Developer with hands-on internship experience in web and mobile application development.
+          Skilled in React.js, JavaScript, Tailwind CSS, Python, and REST API integration with exposure to .NET and Flask
+          backend development. Experienced in building responsive user interfaces, integrating APIs, and understanding
+          real-world application workflows.
+        </p>
+      </div>
+
+      <!-- TECHNICAL SKILLS -->
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-row"><strong>Frontend:</strong> React.js, React Native, JavaScript, Tailwind CSS</div>
+        <div class="skills-row"><strong>Backend:</strong> .NET, Flask, REST APIs</div>
+        <div class="skills-row"><strong>Database:</strong> PostgreSQL, MySQL, SQL</div>
+        <div class="skills-row"><strong>Tools:</strong> GitHub, VS Code, Postman, Figma</div>
+      </div>
+
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <div class="section">
+        <div class="section-title">Professional Experience</div>
+        <div class="exp-header">
+          <span class="role">Full Stack Developer Intern</span>
+          <span class="period">Jan 2026 – May 2026</span>
+        </div>
+        <div class="exp-sub">
+          <span>Circular Carbon Technologies</span>
+          <span>Chennai</span>
+        </div>
+        <ul class="bullets">
+          <li>Worked on frontend development using React.js and React Native for web and mobile applications.</li>
+          <li>Developed responsive user interfaces using JavaScript and Tailwind CSS.</li>
+          <li>Integrated REST APIs and collaborated with backend services using .NET 8.</li>
+          <li>Worked on real-world application workflows and frontend-backend integration.</li>
+          <li>Gained practical exposure to application architecture, API handling, and database workflows.</li>
+        </ul>
+      </div>
+
+      <!-- KEY PROJECTS -->
+      <div class="section">
+        <div class="section-title">Key Projects</div>
+
+        <div class="project-title">Printing Management Web Application</div>
+        <ul class="bullets">
+          <li>Developed a printing management web application for workflow handling.</li>
+          <li>Built responsive frontend interfaces using React.js, JavaScript, and Tailwind CSS.</li>
+          <li>Integrated REST APIs and collaborated with .NET backend services.</li>
+        </ul>
+
+        <div class="project-title">Insurance Mobile Application</div>
+        <ul class="bullets">
+          <li>Developed responsive mobile application interfaces using React.js and Tailwind CSS.</li>
+          <li>Integrated REST APIs for application functionality and workflow management.</li>
+        </ul>
+
+        <div class="project-title">AI-Powered Coding Assistant for Beginner Programmers</div>
+        <ul class="bullets">
+          <li>Developed an AI chatbot using Python and Flask for beginner programming learners.</li>
+          <li>Implemented AI-based coding guidance and beginner-friendly learning support.</li>
+        </ul>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-header">
+          <span class="degree">Bachelor of Technology in Information Technology</span>
+          <span class="year">2022 – 2026</span>
+        </div>
+        <div class="edu-sub">
+          <span>P.T. Lee Chengalvaraya Naicker College of Engineering and Technology (Anna University)</span>
+          <span>Kanchipuram</span>
+        </div>
+        <div class="cgpa">CGPA: 8.4/10</div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="section">
+        <div class="section-title">Certifications</div>
+        <div class="cert-item">Full Stack Development Internship – Circular Carbon Technologies</div>
+        <div class="cert-item">Data Science – Eagle HiTech Pvt</div>
+        <div class="cert-item">Python Programming Certification</div>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="lang-item">English</div>
+        <div class="lang-item">Tamil</div>
+      </div>
+
+    </div><!-- /page -->
+  </div><!-- /page-wrapper -->
+
+</body>
+</html>
