@@ -77,7 +77,7 @@ export default function About() {
                 <div className="flex items-center gap-3 text-slate-400 text-sm">
                   <FaGithub className="text-purple-400 flex-shrink-0" />
                   <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-purple-400 transition-colors">
-                    github.com/kowsalya
+                    github.com/kowsalya88382909
                   </a>
                 </div>
               </div>

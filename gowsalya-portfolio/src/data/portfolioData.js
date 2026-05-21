@@ -7,7 +7,7 @@ export const personalInfo = {
   email: "gowsalyam@ptleecncet.com",
   phone: "+91 88382 96909",
   linkedin: "https://linkedin.com/in/kowsalya09",
-  github: "https://github.com/kowsalya",
+  github: "https://github.com/kowsalya88382909",
   about: `I'm an aspiring Full Stack Developer with hands-on internship experience in web and mobile application development. I love building responsive user interfaces and integrating APIs to create seamless user experiences.
 
 My internship at Circular Carbon Technologies gave me real-world exposure to React.js, React Native, .NET 8, and Flask — working on production-grade applications from day one.

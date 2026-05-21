@@ -105,7 +105,7 @@ export default function Projects() {
                 </button>
                 <div className="flex gap-3">
                   <a
-                    href={`https://github.com/kowsalya`}
+                    href={`https://github.com/kowsalya88382909`}
                     target="_blank"
                     rel="noreferrer"
                     className="w-8 h-8 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-purple-400 hover:border-purple-600 transition-all"
